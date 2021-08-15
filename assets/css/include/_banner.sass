@@ -1,0 +1,64 @@
+.fs-headBanner
+  margin-bottom: 4em
+  .fs-headPicture
+    position: relative
+    justify-content: center
+    overflow: hidden
+  .fs-gradient
+    position: absolute
+    bottom: 53px
+    left: 0
+    width: 88px
+    height: 118px
+    background-color: $orange !important
+    div
+      width: 88px
+      height: 118px
+      transform: skew(0deg, -31deg)
+      transform-origin: top right
+      background: linear-gradient(to right, #22292f 0%, rgba(34, 41, 47, .5) 40%, #f60 100%)
+  .fs-orangeLine
+    position: absolute
+    left: -500px
+    bottom: 53px
+    width: 500px
+    height: 118px
+    background-color: $orange !important
+    z-index: 1
+
+  .fs-blueBanner
+    position: absolute
+    bottom: 0
+    left: 0
+    display: flex
+    align-items: center
+    //margin-top: 20px
+    height: 118px
+    width: 100%
+    background: rgba(0, 102, 179, .8)
+    border-top: 0!important
+    border-bottom: 0!important
+    h2,p
+      color: white
+    p
+      margin-bottom: 0!important
+
+  .fs-socialMedia
+    display: none
+    position: absolute
+    top: 0
+    right: -100px
+    width: 100px
+    height: 508px
+    img
+      padding: 0.5em 1.5em
+      opacity: 0.5
+      cursor: pointer
+      &:hover
+        opacity: 1!important
+
+
+@media screen and (max-width: 600px)
+  .fs-headBanner
+    padding-left: 0!important
+    padding-right: 0!important

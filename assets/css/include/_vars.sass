@@ -1,0 +1,72 @@
+/* SCREEN SIZES */
+$sm: 320px
+$smmd: 576px
+$md: 768px
+$lg: 992px
+$xl: 1200px
+
+/* COLORS */
+$blue: #0066b3
+$orange: #FF6600
+
+$black: #000
+
+$dark-gray: #eeeff0
+$gray: #707172
+$light-gray: #dfdedd
+$lightest-gray: #f6f6f6
+
+$white: #fff
+$white-transparent: rgba(255,255,255,.8)
+
+$border-left-right: 2em
+
+@mixin border-desktop
+  border-width: 3rem
+  border-color: transparent
+  border-style: solid
+
+@mixin border-mobile
+  border-width: 1.5rem
+  border-color: transparent
+  border-style: solid
+
+@mixin text12
+  font-size: 0.9rem!important
+  line-height: 1.3rem!important
+
+@mixin text14
+  font-size: 1rem
+  line-height: 1.4rem
+
+@mixin smallText
+  font-size: 0.8rem
+  line-height: 0.8rem
+
+@mixin text20tiny
+  font-size: 1.2rem
+  line-height: 1.2rem
+
+@mixin text20
+  font-size: 1.2rem
+  line-height: 1.2rem
+  color: $black
+  font-family: frutiger-bold
+
+@mixin text24
+  font-size: 1.5rem!important
+  line-height: 1.6rem!important
+
+@mixin text30
+  font-size: 1.9rem!important
+  line-height: 1.9rem!important
+
+@mixin negative-margined-mobile
+  margin-left: -2em
+  margin-right: -2em
+  width: -webkit-fill-available
+
+@mixin negative-margined-desktop
+  margin-left: -3em
+  margin-right: -3em
+

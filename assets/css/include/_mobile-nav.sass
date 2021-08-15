@@ -1,0 +1,114 @@
+.fs-mobile-menu-nav
+  color: $white
+  .fs-lvl1 > a
+    background-color: $blue
+    padding-left: 0.7em
+    color: white
+    @include text20tiny
+  .fs-lvl2 a
+    background-color: $light-gray
+    padding-left: 1.4em
+    color: $gray
+  .fs-lvl3 a
+    background-color: $lightest-gray
+    padding-left: 2.1em
+    color: $gray
+  .fs-lvl4 a
+    background-color: $white
+    padding-left: 2.8em
+    color: $gray
+  a
+    height: 3em
+    display: flex
+    align-items: center
+    position: relative
+    i
+      background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="-16 -14 50 50" class="w-6"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>')
+      background-repeat: no-repeat
+      border-left: 1px solid #fff
+      position: absolute
+      right: 0
+      width: 58px
+      height: 100%
+      color: white
+      &.fs-active
+        border-right: 1px solid #fff
+        transform: rotate(200grad)
+  .fs-lvl2 *
+    @include text14
+
+  .fs-lvl2, .fs-lvl3, .fs-lvl4
+    display: none
+    i
+      background: url('data:image/svg+xml;utf8,<svg fill="grey" xmlns="http://www.w3.org/2000/svg" viewBox="-21 -14 50 50" class="w-6"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>') no-repeat
+
+  .fs-lvl1
+    margin-bottom: 0.45em
+    &>a:first-child
+      &:hover
+        color: white!important
+        font-weight: bold!important
+
+
+.fs-startpage
+  &.mobileNavOpened
+    margin-left: 280px
+    //transform: translateX(280px)
+    transition: margin-left .3s ease
+
+
+.fs-mobile-menu-container
+  .fs-language-selector
+    margin-top: 1em
+  height: 100vh
+  width: 100%
+  display: flex
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  transform: translateX(-100%)
+  transition: transform .3s ease-out
+  .fs-mobile-menu
+    height: 100%
+    width: 290px //width: 35%
+    background-color: $white
+    position: absolute
+    z-index: 400
+    *
+      font-size: 1.2rem!important
+      line-height: 1.2rem!important
+    li
+      color: $blue
+      .fs-active
+        color: $orange!important
+        cursor: default!important
+      a:hover
+        text-decoration: underline!important
+    li:not(:first-child)
+      padding-left: .3rem
+      display: flex
+      &:before
+        content: "|"
+        padding-right: .3rem
+    .fs-mobile-menu-nav
+      .fs-mobile-menu-nav-item
+        width: 100%
+        //padding: 1rem
+        margin-bottom: .5rem
+        color: $white
+        background-color: $blue
+    .fs-search-container
+      button
+        height: 25px
+        width: 25px
+        padding-right: 8px
+        border: none
+        outline: none
+        background: url("images/icon-search.svg") right no-repeat
+        background-size: contain
+        margin: 10px
+  .fs-mobile-menu-overlay
+    height: 100vh
+    width: 100%
+    background-color: $white-transparent

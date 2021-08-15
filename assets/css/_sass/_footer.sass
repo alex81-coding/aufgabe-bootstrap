@@ -1,0 +1,49 @@
+footer
+  background-color: $light-gray
+  h5
+    font-size: 1.875rem!important
+    color: $gray
+  a
+    //display: block
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      background: none
+      padding-left: 0!important
+
+.fs-sponsors
+  img
+    width: 100%
+    margin-bottom: 1rem
+    max-width: 140px
+
+.footer-bottom
+  img
+    width: 320px
+
+.footer-bottom
+  background-color: $gray
+  @media screen and (min-width: $lg)
+    .fs-footer-list
+      flex-direction: row
+      justify-content: flex-end
+      li
+        background: none
+      li:not(:first-child):before
+        content: "|"
+        margin-left: 0.4rem
+        padding-right: 0.4rem
+      margin-bottom: 0!important
+
+    .fs-right-footer
+      margin-bottom: 0!important
+      display: flex
+      align-items: center
+      justify-content: flex-end
+  @media screen and (max-width: $md)
+    .fs-vbrb-logo
+      width: 100%
+      max-width: 400px
+

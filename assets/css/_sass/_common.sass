@@ -1,0 +1,889 @@
+//PAGEWIDE CSS
+.container-lg
+  max-width: 1600px
+h1, .h1,
+.h2,
+h3,
+.fs-open-loc,
+.fs-loc .h4,
+.fs-right-column h5,
+.fs-right-column .h5
+  font-family: din-next-stencil-medium
+  text-transform: uppercase
+  span
+    font-size: 45%
+
+.h1,
+.fs-text-blue
+  color: $blue
+
+h3, .h3
+  color: $grey-font
+
+
+
+.h3,
+h5, .h5,
+.fs-bold,
+table th,
+.h6
+  font-family: frutiger-bold
+
+ul li,
+p,
+a,
+.font-frutiger,
+input,
+select,
+textarea,
+table td,
+span
+  font-family: frutiger-light
+  color: $grey-font
+  margin-top: 0
+
+b
+  font-family: frutiger-bold
+
+ul li a
+  text-decoration: none!important
+
+ul li,
+p
+  padding-bottom: 5px
+  color: $grey-font
+
+.fs-content
+  ul li,
+  a,
+  p:not(.h1):not(.h2):not(.h3):not(.h4):not(.h5):not(.h6)
+    margin-bottom: 0
+    padding-bottom: 0
+
+.fs-rc-content
+  li
+    margin-bottom: 0
+    padding-bottom: 0
+
+a
+  color: $grey-font
+  *:hover
+    color: $orange
+  &.fs-link
+    color: $orange
+    text-decoration: none
+    &:hover
+      color: $orange
+      text-decoration: underline!important
+
+.fs-text-smallest
+  font-size: 0.9rem
+
+.fs-text-65
+  font-size: 4.3rem
+
+.fs-font-black
+  color: black
+  *, p, span
+    color: black!important
+
+
+ul
+  margin: 0 0 1rem 0!important
+  //padding: 0
+  list-style: none
+  padding-left: 0 // TO DEL? 0.8rem
+  a
+    color: $grey-font
+    &:hover,
+    &.fs-active
+      color: $orange
+  li
+    background-image: url("images/icon-arrow.svg")
+    background-repeat: no-repeat
+    background-size: auto!important
+    background-position-y: 0.5rem
+    padding-left: 1.4rem!important
+
+// ICONS
+li.icon-email
+  background-image: url("images/icon-email.png")
+li.icon-tel
+  background-image: url("images/icon-tel.png")
+li.icon-mobile
+  background-image: url("images/icon-mobile.png")
+
+
+.icon-contact
+  background: url(images/icon-contact.svg)
+
+
+.icon-calendar
+  background: url(images/icon-calendar.svg)
+
+.icon-clock
+  background: url(images/icon-clock.svg)
+
+*[class*="icon-"]
+  background-repeat: no-repeat
+  background-position-y: center
+  background-size: contain //0.9rem
+  padding-left: 1.5rem
+  padding-top: 0
+  padding-bottom: 0
+
+.h1[class*="icon-"]
+  padding-left: 4.5rem
+  margin-bottom: 0
+  @media screen and (max-width: $md)
+    padding-left: 2em
+
+
+// CONTENT
+.fs-content,
+.fs-vertical-divider
+  @media screen and (min-width: $lg+1)
+    margin-bottom: 9rem
+  @media screen and (max-width: $lg)
+    margin-bottom: 5rem
+
+// CONTENT
+.fs-content-inner
+  margin-bottom: 4rem
+  .fs-button
+    margin-left: auto
+
+//// BOX
+.container-lg
+  &>.row
+    margin-bottom: 1rem
+
+.fs-centered
+  &>.row
+    &>div[class*="col-"]
+      text-align: center
+
+
+// CONTENT: "fs-news-archiv"
+.fs-news-tab
+  text-decoration: none
+  border: solid $gray
+  border-width: 0 0 2px 0
+  width: 100%
+  cursor: pointer
+  h3
+    margin: 0.5rem auto
+    width: fit-content
+  &:hover h3
+    color: $orange
+
+.fs-tab-active
+  border-width: 2px 2px 0 2px !important
+  h3
+    color: $orange
+
+
+// CONTENT: "fs-highlighted-3col"
+.fs-highlighted-3col *
+  font-family: frutiger-bold
+  text-transform: none!important
+
+// CONTENT:
+// ELEMENT "NEWS"
+@media screen and (min-width: $xl+1)
+  .fs-news-box
+    height: 40rem
+
+@media screen and (max-width: $xl)
+  .fs-news-box
+    height: 47rem
+
+@media screen and (max-width: $lg)
+  .fs-news-box
+    height: 46rem
+
+@media screen and (min-width: $md+1)
+  .fs-news-list
+    height: 98%
+
+@media screen and (max-width: $md)
+  .fs-news-box
+    height: auto
+    overflow: hidden
+    .fs-news-list
+      height: 27rem
+
+.fs-news-list
+  overflow: hidden
+  overflow-y: scroll
+  padding-right: 1rem
+
+.fs-news-block
+  .fs-teaser-picture
+    margin-left: -3rem!important
+    margin-right: -3rem!important
+
+.fs-news-block,
+.fs-news-list
+  a
+    display: block
+
+.fs-news-item
+  margin-top: 2rem
+  margin-bottom: 2rem
+  text-decoration: none!important
+  align-items: center
+  *
+    color: #707172!important
+  .h1
+    padding-right: 1.5rem
+
+.fs-news-list::-webkit-scrollbar,
+.fs-scroll-list::-webkit-scrollbar
+  width: 11px
+  cursor: pointer
+
+.fs-news-list::-webkit-scrollbar-thumb,
+.fs-scroll-list::-webkit-scrollbar-thumb
+  background: #0066b3
+  border-left: 3px solid white
+  border-right: 3px solid white
+  border-radius: 4px
+
+.fs-news-list::-webkit-scrollbar-track,
+.fs-scroll-list::-webkit-scrollbar-track
+  background: #707172
+  border-left: 5px solid white
+  border-right: 5px solid white
+
+
+// CONTENT:
+// ELEMENT: HIGHLIGHTING
+div:not(.fs-contact)
+  .fs-teaser-picture
+    background-repeat: no-repeat
+    min-height: 22rem
+    background-size: cover
+    background-position: center
+    height: 100%
+
+@media screen and (max-width: $smmd)
+  .fs-highlighted
+    background-color: $light-gray
+  .fs-bg-gray
+    background-color: $gray
+
+  div[class*="sm-12"]:not(.fs-overlayed)
+    overflow: hidden
+    .fs-teaser-picture
+      margin-left: -3rem
+      margin-right: -3rem
+
+
+@media screen and (min-width: $smmd+1)
+  .fs-highlighted
+    &>*
+      background-color: $light-gray
+      height: 100%
+
+  .fs-bg-gray
+    &>*
+      background-color: $gray
+
+.fs-quote,
+.fs-multi-teaser
+  //max-width: 1000px
+
+
+// CONTENT:
+// ELEMENT "fs-highlight-teaser"
+.fs-highlight-teaser
+  p.h5
+    margin-top: 1.5rem!important
+    margin-bottom: 1rem!important
+  @media screen and (min-width: $sm+1)
+    .d-flex
+      &>div:first-child
+        margin-right: 1.8rem
+  @media screen and (min-width: $md+1)
+    .d-md-flex,
+    .d-lg-flex
+      &>div:first-child
+        margin-right: 2rem
+
+.fs-md-centered-content
+  @media screen and (max-width: $md)
+    text-align: center
+    img
+      padding-bottom: 0.5rem
+
+.fs-smaller-content
+  @media screen and (min-width: $md+1)
+    p
+      margin-bottom: 0
+    div:first-child
+      //padding-right: 2.5rem!important
+
+  @media screen and (min-width: $sm+1) and (max-width: $lg)
+    div:first-child
+      padding-left: 0!important
+    div:last-child
+      padding-right: 0!important
+
+  @media screen and (min-width: $lg+1)
+    &>div:first-child
+      padding-left: 13%!important
+    &>div:last-child
+      padding-right: 13%!important
+
+
+// CONTENT:
+// ELEMENT- TEASER-BOXES
+@media screen and (max-width: $lg+1)
+  .fs-multi-teaser .row
+    &>div[class*="col-md"]
+      margin-bottom: 2rem
+    &>div[class*="col-md-"]:last-child
+      margin-bottom: 0!important
+.fs-multi-teaser p
+  margin-bottom: 0!important
+.fs-t3-content
+  margin-top: 1rem
+.fs-bigger-text
+  font-size: 111%
+  li
+    margin-bottom: 2rem!important
+    background-size: 3%!important
+    padding-left: 2.5rem!important
+    background-position-y: 0.40rem
+    a
+      font-family: 'frutiger-roman'!important
+
+// CONTENT
+// ELEMENT: OVERLAYER AND SUBMIT
+.fs-overlayed
+  position: relative
+  @media screen and (max-width: $md)
+    padding-left: 0
+    padding-right: 0
+    &>*
+      position: relative
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+  .fs-submit-box
+    position: relative
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 9
+    .fs-submit-box-text
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      backdrop-filter: blur(4px)
+      background: rgba(111, 111, 111, 0.5)
+      display: flex
+      padding-left: 0
+      padding-right: 0
+      &>div
+        background-color: $light-gray
+        border: 1px solid #707172
+        margin: auto
+        width: 90%
+        max-width: 16rem
+        padding: 1rem
+        .fs-button
+            //margin: 0 auto
+
+    //@media screen and (max-width: $md)
+    //  top: 0
+    //  left: 0
+    //  height: 100%
+    //  width: 100%
+    //  backdrop-filter: blur(4px)
+    //  background: rgba(111, 111, 111, 0.5)
+
+
+// CONTENT
+// ELEMENT "fs-box-pic-and-text"
+.fs-box-pic-and-text
+  &>.row
+    margin-bottom: 3rem
+
+// CONTENT
+// ELEMENT - ZITAT
+.fs-quote
+  background: url(images/icon-zitat.png) no-repeat 0 -2rem transparent
+  .fs-quote-text
+    padding: 4rem 1rem 0
+    text-align: center
+    hr
+      width: 4rem
+      color: $dark-gray
+      height: 2px
+      margin: 1rem auto
+
+// CONTENT:
+// ELEMENT "COLUMN GAP"
+@media screen and (min-width: $md+1)
+  .fs-column-gap p
+    column-count: 2
+    column-gap: 2rem
+
+.fs-content-inner
+  .fs-teaser-picture
+    min-height: 10rem!important
+    //background-size: contain!important
+
+// CONTENT:
+// ELEMENT: "fs-downloads"
+.fs-downloads
+  a
+    display: flex
+    color: $blue!important
+    font-family: frutiger-bold
+    text-decoration: none
+    justify-content: space-between
+    align-items: center
+    i.icon-download
+      background-image: url("images/icon-download.png")
+      background-repeat: no-repeat
+      height: 18px
+      width: 18px
+      display: block
+      padding-left: 0
+      align-items: center
+  .row
+    &>*
+      margin-bottom: 4px
+
+// CONTENT: "fs-map"
+#fs-map-container
+  min-height: 30rem
+  .fs-map-margin
+    position: relative
+    height: 100%
+    overflow: hidden
+    @media screen and (max-width: $smmd)
+      margin-left: -0.7rem
+      margin-right: -0.7rem
+  #fs-map
+    height: 100%
+
+@media screen and (max-width: $md)
+  .fs-selected
+    display: none!important
+
+.fs-select
+  display: none
+  border: 2px solid $blue
+  border-top: 0!important
+  background-color: white
+  p
+    padding: 0 14px !important
+    cursor: pointer
+    border-top: 5px solid transparent
+    border-bottom: 5px solid transparent
+    &:hover
+      background-color: $blue
+      color: white!important
+
+.fs-dropdown
+  border: 2px solid $blue
+  background-color: white
+  position: relative
+  padding: 7px 14px
+  display: flex
+  align-items: center
+  cursor: pointer
+  a
+    text-decoration: none!important
+    color: $blue
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%230066b3" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><path d="M2,4 L8,14 L14,4"></path></svg>')
+  background-repeat: no-repeat
+  background-position: right
+  &.fs-opened
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%230066b3" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"><path d="M2,14 L7,4 L13,14"></path></svg>')!important
+
+
+.fs-locs
+  background: rgba(255,255,255,0.5)
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1
+
+.fs-selected
+  max-height: 20rem
+  overflow-y: auto
+  overflow-x: hidden
+
+.fs-open-loc
+  cursor: pointer
+  font-size: 26px
+  border-top: 10px solid transparent
+  display: block
+  text-decoration: none
+
+.fs-info-sector
+  display: none
+  position: absolute
+  top: 1rem
+  left: 1rem
+
+.fs-loc
+  display: none
+  background-color: white
+  border: 1px solid $blue
+  padding: 1rem
+  width: fit-content
+  width: -moz-fit-content
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 1
+  text-align: center
+  max-width: 500px
+  margin: auto
+  height: 200px
+  max-height: 400px
+
+//CONTENT "fs-form"
+.fs-form
+  input[type="text"],
+  select,
+  textarea
+    height: 2rem
+    margin-bottom: 1rem
+    font-size: 0.9rem
+    padding-left: 7px
+
+  input[type="text"],
+  select,
+  textarea
+    width: 100%
+
+  textarea
+    height: 10rem
+
+input#fs-name
+  border: 2px solid $blue
+  padding: 7px 14px
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+.fs-checkcontainer
+  position: relative
+  margin-bottom: 12px
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  input[type="checkbox"]
+    position: absolute
+    cursor: pointer
+    height: 25px
+    width: 25px
+    left: 0
+    top: 0
+  p
+    padding-left: 2.5rem
+
+.fs-checkmark
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  height: 25px
+  width: 25px
+  border: 1px solid $dark-gray
+
+.fs-checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+.container input:checked ~ .fs-checkmark:after
+  display: block
+
+.fs-checkmark
+  &:after
+    position: absolute
+    content: ""
+    left: 8px
+    top: 4px
+    width: 7px
+    height: 12px
+    border: solid $blue
+    border-width: 0 3px 3px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+    input:checked ~ .fs-checkmark
+      border: solid white!important
+
+@media screen and (max-width: $smmd)
+  table
+    width: unset!important
+    margin-left: -0.68rem
+    margin-right: -0.68rem
+
+.fs-table
+  overflow-x: scroll
+table
+  width: 100%
+  tr
+    border-bottom: 1px solid $gray
+  th
+    background-color: $gray
+    color: $blue
+  th,td
+    @media screen and (max-width: $md)
+      padding-left: 2.15rem
+      padding-right: 2.15rem
+    @media screen and (min-width: $md+1)
+      padding-left: 3rem
+      padding-right: 3rem
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+
+
+.fs-button
+  cursor: pointer
+  display: block
+  width: fit-content
+  width: -moz-fit-content
+  border: 1px solid #0066b3
+  padding-left: 1rem
+  padding-right: 1rem
+  color: #0066b3 !important
+  background-color: #fff
+  font-size: 0.9em !important
+  font-family: frutiger-bold
+  margin-top: 1.2rem
+  line-height: 1.8rem
+  text-decoration: none
+  &:hover
+    color: white!important
+    background-color: $blue
+
+.fs-highlight-teaser p
+  margin-bottom: 0!important
+  padding-bottom: 0!important
+
+
+.fs-divided-content
+  //position: relative
+
+// CONTENT:
+// ELEMENT "LEFT COLUMN"
+.fs-left-column
+  //  padding-right: 200px
+
+// CONTENT:
+// ELEMENT "RIGHT COLUMN"
+.fs-right-column
+  h3
+    font-size: 90%
+    color: $blue!important
+
+  img
+    width: 100%
+
+  @media screen and (min-width: $md+1)
+    &>*
+      margin-left: auto
+      //width: 160px
+  .fs-downloads a
+    justify-content: unset
+    i
+      padding-left: 2rem
+  i.icon-download
+    background-image: url("images/icon-download-rc.png")!important
+
+.fs-vertical-divider
+  background-image: url(images/bg-line.png)
+  background-position: center
+
+
+@media screen and (max-width: $md)
+  .fs-text-20
+    font-size: 0.9rem!important
+  .fs-text-24
+    font-size: 1rem!important
+  .fs-contact
+    img
+      width: auto!important
+  .fs-downloads
+    flex-flow: row-reverse
+
+.fs-contact
+  height: 100%
+  flex-flow: column
+  justify-content: space-between
+  .h6
+    margin-top: 1rem
+    font-family: frutiger-roman
+    color: $grey-font!important
+  .fs-teaser-picture
+    height: auto!important
+    min-height: 18rem!important
+
+
+
+// ELEMENT "fs-carousel"
+.fs-carousel-items
+  @media screen and (max-width: $sm)
+    height: 150px
+  @media screen and (min-width: $sm+1)
+    height: 204px
+  @media screen and (min-width: 444px)
+    height: 250px
+  @media screen and (min-width: 500px)
+    height: 270px
+  @media screen and (min-width: 550px)
+    height: 290px
+  @media screen and (min-width: 600px)
+    height: 310px
+  @media screen and (min-width: 650px)
+    height: 330px
+  @media screen and (min-width: 700px)
+    height: 360px
+  @media screen and (min-width: $md)
+    height: 250px
+
+.fs-carousel
+  max-width: 1111px
+  .fs-carousel-container
+    position: relative
+    .fs-carousel-items
+      position: relative
+      width: 100%
+      display: flex
+      align-items: center
+      *
+        position: absolute
+      @media screen and (min-width: $md+1)
+        .fs-slide-left
+          //opacity: 0.5
+          left: 5%
+          height: 205px
+          width: 392px
+          z-index: 2
+        .fs-slide-right
+          //opacity: 0.5
+          left: 95%
+          height: 205px
+          width: 392px
+          transform: translate(-100%)
+          z-index: 1
+        .fs-slide-center
+          left: 50%
+          transform: translate(-50%)
+          height: 230px
+          width: 420px
+          z-index: 3
+        .fs-slide-left
+          transition-timing-function: ease-in
+        .fs-slide-right
+          transition-timing-function: ease-in
+        .slide-fast
+          transition: 0.7s
+          transition-timing-function: ease-in-out
+        .slide-slow
+          transition: 2s
+        .slide-slowest
+          transition: 2.5s
+      @media screen and (max-width: $md)
+        .fs-slide-right
+          opacity: 0
+          transition: 1s
+        .fs-slide-left
+          opacity: 0
+          transition: 1s
+        .fs-slide-center
+          transition: 1s
+
+
+
+@media screen and (max-width: $md)
+  .fs-carousel
+    position: relative
+    .fs-carousel-items
+      overflow: hidden
+      *
+        top: 0
+        height: 205px
+        width: 392px
+      img
+        width: 100%!important
+        height: auto!important
+      .fs-slide-left
+        z-index: 1
+        transform: translate(-110%)
+        opacity: 1
+      .fs-slide-right
+        transform: translate(110%)
+        z-index: 2
+      .fs-slide-center
+        z-index: 3
+
+.fs-slide-buttons
+  position: absolute
+  top: 41%
+  display: flex
+  width: 100%
+  justify-content: space-between
+  *
+    width: 40px
+    height: 40px
+    border-radius: 5px
+    background-image: url("images/icon-arrow.svg")
+    background-repeat: no-repeat
+    background-size: 67%
+    background-color: $light-gray
+    background-position: center
+    cursor: pointer
+    z-index: 4
+  .fs-go-left
+    transform: rotate(180deg)
+  @media screen and (max-width: $md)
+    display: flex
+    justify-content: space-between
+    top: 105%
+    width: 140px
+    height: 60px
+    margin: auto
+    left: 0
+    right: 0
+
+//.fs-search-ansprechpartner
+//  ::-webkit-input-placeholder
+//      color:    $blue
+//  :-moz-placeholder
+//     color:    $blue
+//     opacity:  1
+//  ::-moz-placeholder
+//     color:    $blue
+//     opacity:  1
+//  :-ms-input-placeholder
+//     color:    $blue
+//  ::-ms-input-placeholder
+//     color:    $blue
+//  ::placeholder
+//     color:    $blue

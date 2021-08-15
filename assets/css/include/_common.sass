@@ -1,0 +1,1075 @@
+*, footer .fs-footer-list a, .fs-footer-nav a
+  margin: 0
+  padding: 0
+  font-family: frutiger-light
+  font-size: 15px
+  color: $gray
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+#custom-templates
+  min-height: 100%
+  min-width: 100%
+  line-height: 1.5rem !important
+
+.container .container .row
+  margin-left: -2rem
+  margin-right: -2rem
+
+.fs-content
+  margin-bottom: 4.5rem
+  .row
+    overflow: hidden
+  .row:last-child
+    margin-bottom: 0!important
+
+
+
+ul.fs-linklist, ul.fs-linkListHighlight
+  list-style-type: none
+  margin: 0
+  padding: 0
+  margin-right: 2em
+  a
+    &:before
+      content: " "
+      background-image: url(images/icon-arrow.svg)
+      width: 16px
+      height: 13px
+      display: inline-block
+      background-repeat: no-repeat
+      background-position: 0 80%
+      background-size: 50%
+
+
+ul.fs-linklist
+  li
+    text-indent: -1.1em
+    padding-left: 1.2em
+    a
+      color: $gray
+      @include text14
+      margin-bottom: 5px
+
+ul.fs-linkListHighlight
+  li
+    line-height: 3em !important
+    text-indent: -1.95em
+    padding-left: 1.95em
+    a
+      font-family: frutiger-roman
+      font-size: 1.2em
+      color: black //tO DO !important
+      &:before
+        background-size: 84% !important
+        margin-right: 13px
+.fs-no-border-up-and-down
+  border-top: 0!important
+  border-bottom: 0!important
+
+.fs-linkTitle
+  color: $blue
+
+a[href^="mailto:"]
+  color: $orange !important
+
+a,button
+  cursor: pointer
+a
+  color: inherit
+  transition: .3s
+  text-decoration: none !important
+.fs-news-item
+  &:hover,
+  &:hover *
+    color: #444 !important
+h4
+  font-size: 4em !important
+h5
+  font-size: 2.5rem !important
+h1,h2,h4,h5
+  text-transform: uppercase
+  color: $blue
+h2, h4, h5, .fs-news-date *, .fs-din-next
+  font-family: din-next-stencil-medium
+  margin-bottom: 0.8em
+h7
+  color: $blue
+.fs-padding-title
+  margin-left: -0.75rem
+  margin-bottom: 0!important
+p
+  @include text14
+.fs-blackFont *
+  color: black!important
+.container > h5,h6
+  margin-bottom: 2rem
+div[class*="col"] > h4,
+div[class*="col"] > h5
+  margin: 0
+button, a.fs-button, input.button
+  border: 1px solid $blue
+  padding: 4px 20px
+  color: $blue !important
+  background-color: $white
+  font-size: 0.9em !important
+  font-family: frutiger-bold
+  margin-top: 1em
+  width: max-content
+  display: block
+  text-align: center
+  &:hover
+    color: white!important
+    background-color: $blue
+//CONTENT CSS
+.container
+  //margin-bottom: 3em
+.fs-noPaddingAndMargin
+  padding: 0!important
+  margin: 0!important
+.fs-bg-lightest-gray
+  background-color: $lightest-gray
+
+.fs-highlight-this
+  background-color: $lightest-gray
+
+  p,span
+    //@include smallText
+  p:last-child
+    margin-bottom: 0!important
+
+.fs-no-background
+  background: transparent!important
+.fs-padding-content
+  div[class*="col-"]
+    &>div:not(.container)
+      //padding: 1.5em 2.1em
+      //background-color: $lightest-gray
+.fs-content
+  div.row
+    //margin-left: 0 !important
+    //margin-right: 0 !important
+    //margin-bottom: 45px
+.fs-podcasts
+  div[class*="col-"]
+    border-top: 1.5em solid transparent!important
+    border-bottom: 1.5em solid transparent!important
+    margin-bottom: 3em !important
+  .fs-flexed-followed
+    align-items: center
+.fs-teaser-picture
+  max-height: 300px
+  overflow: hidden
+  display: flex
+  justify-content: center
+  img
+    object-fit: cover
+
+
+.fs-title-no-bgColor
+  padding-top: 0!important
+  padding-bottom: 0!important
+  margin-bottom: 2.73em
+  h3,h4,h5
+    margin-bottom: -10px !important
+h6 //TODO just for teaser-box or global?
+  color: $blue !important
+  font-family: 'frutiger-bold'
+  padding: 4px ​0 20px 0
+.fs-bgImage
+  //overflow: hidden
+  display: flex
+  justify-content: center
+  height: auto
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  &>img
+    margin-left: -3rem
+    margin-right: -3em
+    width: 100%
+    object-fit: cover
+
+
+
+
+//.fs-content
+//  &>.row.fs-direct-text
+//    &>div[class*="col-"]
+//      padding-left: 0
+//      padding-right: 0
+
+
+// SPECIAL CONTENT
+.fs-double-box .row,
+.fs-social-media div[class*="col-"]
+  margin-bottom: 2rem
+.fs-news-block
+  padding-top: 2em
+  background-color: $lightest-gray
+  .fs-image
+    max-height: 300px
+.fs-teaser-box
+  margin-bottom: 4.5rem
+.fs-highlight
+  text-align: center
+  margin-top: 1.5rem
+  margin-bottom: 1.5rem
+  img
+    margin-right: 0.5rem
+.fs-hlbDescription
+  padding-right: 1em
+
+
+.fs-news-picture
+  max-height: 333px
+  overflow: hidden
+
+// CONTAINER NEWS
+.fs-teaser-news
+  max-height: 750px
+  overflow: hidden
+  overflow-y: scroll
+  padding-right: 2em !important
+
+.fs-teaser-news
+  //overflow: hidden
+  &::-webkit-scrollbar
+    width: 11px
+    cursor: pointer
+  &::-webkit-scrollbar-thumb
+    background: $blue
+    border-left: 3px solid white
+    border-right: 3px solid white
+    border-radius: 4px
+  &::-webkit-scrollbar-track
+    background: $gray
+    border-left: 5px solid white
+    border-right: 5px solid white
+  &::-webkit-scrollbar-thumb:hover
+    background: $blue
+
+.fs-news-item
+  display: flex
+  margin-bottom: 1rem
+  p
+    display: inline-block
+    @include text24
+
+.fs-news-date
+  text-align: center
+  margin-right: 20px
+  width: 70px
+  span
+    display: block
+  span.fs-newsDay
+    font-size: 2.4rem!important
+    line-height: 2rem!important
+    padding-top: 6px
+    margin-bottom: 1px
+  span.fs-newsMonth
+    font-size: 1.1em!important
+
+
+
+// CONTAINER TEASER-BOXEN
+.fs-this-highlighted
+  background-color: $lightest-gray
+  justify-content: space-between
+.fs-space-between
+  justify-content: space-between
+.fs-content
+  margin-bottom: 6em
+.fs-content
+  .row:not(.fs-padding-content)
+    //margin-bottom: 2.5rem
+  .row:last-child,
+  p:last-child
+    margin-bottom: 0!important
+.fs-teaser-box
+  p
+    color: $black!important
+
+.fs-news-list
+  border-right: 0!important
+
+
+// BLOCKWIDE ELEMENTS
+.fs-centered
+  margin: 0 auto 0.4em!important
+  max-width: 77%!important
+  align-items: center
+  width: fit-content
+  text-align: center
+  div
+    text-align: left!important
+.fs-submitBox
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  height: 100%
+  width: 100%
+  backdrop-filter: blur(4px)
+  background: rgba(111,111,111,0.5)
+  div
+    background-color: $lightest-gray
+    padding: 26px 18px
+    border: 1px solid $gray
+    margin: auto
+    max-width: 16rem
+    p
+      @include text14
+    button,
+    .fs-button
+      display: block
+      margin: 10px auto
+      width: 100%
+.fs-overlayed .fs-submitBox
+  //@include negative-margined-mobile
+
+.fs-full-width-buttons
+  .fs-button,
+  button
+    width: 100%!important
+
+*[class*="icon-"]
+  margin-right: 1em
+  &:before
+    content: " "
+    display: inline-block
+    margin-right: 0.3em
+.icon-contact
+  &:before
+    content: url(images/icon-person.png)
+.icon-contact2
+  &:before
+    content: url(images/icon-contact-big.png)
+.icon-clock
+  &:before
+    content: url(images/icon-clock.png)
+.icon-date
+  &:before
+    content: url(images/icon-calendar.png)
+.icon-podcast
+  &:before
+    content: url(images/icon-podcast.png)
+
+* i[class*="icon-"]
+  &:before
+    height: 100%
+
+
+
+
+
+// CONTAINER CONTACT
+.fs-contact-data
+  .fs-kontaktPosition
+    margin: 0.5em 0 1em!important
+  h6
+    line-height: 2.3em
+    margin-bottom: 0.5em!important
+.fs-contact
+  h8
+    display: block
+    font-family: frutiger-roman
+    margin: 0.5rem 0
+  //width: fit-content
+  margin-right: 0
+  margin-left: auto
+  text-align: left
+  img
+    display: block
+    width: 100% //max-content
+  p,a
+    display: block
+    @include text14
+    line-height: 1.2rem!important
+  p
+    margin-bottom: 0.5em
+  a
+  .fs-contactPhone
+    color: $gray
+    &:before
+      content: " "
+      width: 20px
+      height: 15px
+      background: url(images/icon-tel.png) no-repeat
+      display: inline-block
+      vertical-align: bottom
+  .fs-contactMail
+    color: $orange
+    &:before
+      content: " "
+      width: 20px
+      height: 16px
+      background: url(images/icon-email.png) no-repeat
+      display: inline-block
+      vertical-align: bottom
+
+.fs-contact-col3
+  img
+    max-width: 90%
+  div[class*="col-"]
+    padding-right: 1em
+    margin-top: 1em
+    //margin-bottom: 1em
+
+.fs-contact-img
+  width: auto //11rem
+  img
+    object-fit: cover
+    height: 18rem
+
+
+
+
+.fs-content
+  div.fs-rightAligned
+    .fs-contact-img img
+      height: 13.5em!important
+
+.fs-put-it-right
+  text-align: right
+  width: min-content
+  margin-right: 0
+  margin-left: auto
+  padding-bottom: 8px
+
+
+
+// CONTAINER CAROUSEL
+.carousel-control-next-icon, .carousel-control-prev-icon
+  background-color: $blue
+  border-radius: 40px
+  width: 4rem!important
+  height: 4rem!important
+
+
+
+.fs-marginB100
+  margin-bottom: 100px
+
+
+
+.fs-px40
+  font-size: 2.4rem !important
+.fs-px13
+  display: block
+  @include text14
+  margin-top: 10px
+.fs-blue
+  color: $blue !important
+.fs-bgWhite
+  background-color: white
+
+.fs-frutiger20Black
+  @include text20
+  margin-bottom: 30px
+
+.fs-contentGap
+  .fs-gapText
+    column-count: 2
+    column-gap: 50px
+
+
+
+.fs-bigHighlight
+  max-width: 50em!important
+  p
+    color: black
+.fs-highlights-multi
+  div[class*="col"]
+    div
+      background-color: $lightest-gray
+
+//MAP
+.fs-map
+  div
+    align-items: stretch
+  h5
+    @include text30
+  .fs-mapContent
+    position: relative
+    height: 100%
+    min-height: 30em
+    overflow: hidden
+  .fs-highlight-this
+    height: 100%
+#fs-locationMap
+  position: absolute
+  height: 100%
+  width: 100%
+
+
+// TEMPLATE RIGHT CONTENT
+
+.fs-rightAligned
+  width: fit-content
+  .fs-contact
+    margin-bottom: 3rem
+  .fs-contactBox
+    width: auto
+  margin-left: auto
+  margin-right: 0
+  max-width: 150px
+  .fs-centered
+    max-width: 100%!important
+  h5
+    font-size: 1.1em!important
+    text-align: center
+    margin: 0 0 1.5rem!important
+    &:before
+      display: block
+      width: 35px
+      margin: 0 auto
+  div[class*="col-"]
+    width: 100%!important
+
+
+
+
+
+
+.fs-zitat
+  background: url(images/icon-zitat.png) no-repeat 0 0 transparent
+  min-height: 12rem
+  display: flex
+  justify-content: center
+  padding-top: 7rem
+  p
+    @include text24
+    font-family: 'frutiger-bold'
+    line-height: 2rem !important
+    max-width: 88%
+    text-align: center
+    span
+      display: block
+      &:before
+        content: " "
+        width: 80px
+        height: 2px
+        background-color: $light-gray
+        display: block
+        margin: 24px auto
+.fs-frutigerBold *
+  font-family: 'frutiger-bold'
+  @include text14
+
+div[class*="col"]
+  h5 + *
+    //margin-top: 2em
+#custom-templates,
+footer > div
+  &>.container
+    &>.fs-flexed-followed
+      &>div[class*="col"]
+        padding-left: 0 !important
+        padding-right: 0 !important
+
+// CONTAINER DOWNLOAD
+.fs-downloads
+  margin-top: -3em!important
+  div[class*="col"]
+    padding: 0!important
+    >*
+      padding: 0.75em 43px
+      border-bottom: 6px solid white
+      font-family: frutiger-roman
+      @include text14
+    a
+      color: $blue
+    h6,p
+      margin-bottom: 0!important
+      padding-bottom: 0!important
+  .fs-divTitle
+    background-color: $blue
+    color: white
+  a
+    display: block
+    background-color: $light-gray
+    margin-bottom: 0.2rem !important
+    position: relative
+    &:after
+      content: url(images/icon-download.png)
+      position: absolute
+      right: 3em
+  a:hover
+    color: $orange!important
+.fs-blueDownload
+  //color: white !important
+  //background-color: $blue!important
+  background-image: linear-gradient(10deg, #fff -6%, #0066b3 90%)
+  &:hover
+    //color: white!important
+    //font-weight: bold!important
+  &:after
+    content: url(images/icon-download-white.png)!important
+
+.fs-contact-data
+  padding-right: 2.5em
+
+
+// SLICK-BOX
+.fs-slick-slide
+  height: 100px
+.fs-slick-box
+  background: url(../images/carousel-mitarbeiter.png) no-repeat
+  position: relative
+  width: 30em
+  height: 15em
+  .fs-slick-text
+    position: absolute
+    top: 0
+    right: 0
+.fs-content
+  &>.row
+    //margin-bottom: 3em
+    &>div[class*="col-"]
+
+// HIGHLIGHT-BOXES
+.fs-highlight-row
+  background-color: $lightest-gray
+.fs-padding-content
+  h5
+    border-bottom: 0!important
+    //margin-bottom: -0.5em!important
+.fs-highlight-followed,
+.fs-flexed-followed
+  display: flex
+  justify-content: space-between
+  div[class*="col-"]
+    //margin-bottom: 1em!important
+
+.fs-highlight-followed
+  div[class*="col-"]
+    //text-align: center
+    background-color: $lightest-gray
+    padding-left: 0
+    padding-right: 0
+    align-content: space-between
+    display: grid
+    margin-bottom: 1em
+    &>div
+      //padding: 3em
+      p
+        //color: $blue
+        margin-bottom: 2em
+        text-align: left
+      a
+        display: block
+        //width: 100%
+
+.fs-flexed-followed
+  p
+    @include text14
+  h6.fs-hlbTitle
+    margin-top: 1.4rem
+    color: black!important
+  .fs-hlbImage
+    margin-right: 30px
+  .fs-hlbMotto
+    font-weight: bold
+    margin-bottom: 0
+  .fs-hlbText
+    padding-right: 1.5rem
+
+.fs-vertMiddled
+  padding: 0
+  align-content: center
+
+.fs-overlayed
+  position: relative
+
+p + button
+  margin-top: 2em!important
+
+.fs-highlight-multi
+  //padding: 2em
+  div[class*="col-"]
+    padding-left: 1em
+    padding-right: 1em
+  .fs-flexed-followed
+    align-items: center
+    justify-content: flex-start
+    margin: 1.5em 0
+
+.fs-boxes
+  .gx-0 div
+    background-color: #eee
+
+#custom-templates
+  &>.container
+    &>.row
+      &>div[class*="col-"]
+        padding-left: 0
+        padding-right: 0
+
+.fs-image-teaser
+  *
+    margin: 0!important
+  span
+    white-space: nowrap
+  .icon-date
+    margin-right: 1em!important
+
+
+@media screen and (min-width: 575px)
+  .row.fs-paddingless-content
+    &>div[class*="col-"]
+      border-left: 0!important
+      border-right: 0!important
+  .fs-no-padding-left
+    border-left: 0!important
+
+@media screen and (max-width: 576px)
+  //.container
+  //  &>.row
+  //    &>div[class*="col-"]:not(.fs-full-mobile-width)
+  //      @include border-mobile
+  .container
+    &>.container
+      padding-left: 0
+      padding-right: 0
+      &>.row:not(.fs-highlight-row)
+        @include border-mobile
+    .fs-rightAligned
+      @include border-mobile
+
+  .container
+    //.row:not(.fs-padding-content):not(.fs-highlight-row):not(.fs-highlight-followed):not(.fs-space-between)
+      border: 2em solid transparent
+  .fs-content
+    &>.row
+      &>div[class*="col-"]
+        .fs-bgImage,
+        .fs-submitBox
+          @include negative-margined-mobile
+          //width: 121%!important
+  .fs-highlight-multi
+    .fs-flexed-followed
+      display: block
+      text-align: center
+      img
+        margin: 0!important
+  .fs-rightAligned
+    padding-left: 0!important
+    padding-right: 0!important
+  .d-sm-none
+    display: none
+
+  .fs-highlight-followed div[class*=col-] > div
+    padding-top: 2em!important
+    padding-bottom: 2em!important
+    padding-left: 0!important
+    padding-right: 0!important
+
+@media screen and (min-width: $md)
+  .fs-this-highlighted
+    border: 3em solid transparent
+  .fs-teaser-news-left
+    margin-left: 3rem
+    margin-right: 3rem
+  .fs-padding-content,
+  .fs-title-no-bgColor
+    //padding-left: 3em!important
+    //padding-right: 3em!important
+    p,span
+      //margin: 1em 0
+      @include text14
+    div[class*="col-"],
+      &.fs-highlight-this
+      //padding-left: 0
+      //padding-right: 0
+    &.fs-highlight-this p
+      margin-bottom: 1.5em!important
+    .fs-padding-content
+      padding: 2.1em !important
+  .fs-teaser-news
+    max-height: 616px
+  .fs-highlight-followed,
+  .fs-space-between
+    .row
+      &>div.fs-highlight-this
+        display: flex
+
+  .fs-map
+    .row:first-of-type
+        margin-bottom: 1em!important
+
+  .row:not(.fs-padding-content)
+    div[class*="col-"]
+      &.fs-highlight-this
+        //margin-top: 0.75em
+        //margin-bottom: 0.75em
+        border: 3em solid transparent
+
+  .row.fs-this-highlighted,
+  .fs-highlight-followed,
+  .fs-space-between
+    div[class*="md-6"]
+      width: 49%
+
+  .fs-highlight-this
+    background-color: $lightest-gray
+    padding-top: 3em
+    padding-bottom: 3em
+
+  .fs-content
+    &>.row:not(.fs-this-highlighted)
+      &>div[class*="col-"]
+        //border-left: 3em solid transparent
+        //border-right: 3em solid transparent
+        &>.fs-bgImage
+          &>img
+            @include negative-margined-desktop
+            width: -webkit-fill-available
+            .fs-submitBox
+              @include negative-margined-desktop
+              width: -webkit-fill-available
+  .fs-highlight-row,
+  .fs-padding-content,
+  .fs-highlight-followed > div[class*="col-"],
+  .fs-padding-title
+    @include border-desktop
+
+@media screen and (max-width: $md)
+  .fs-content
+    &>.row
+      &>div[class*="col-"]
+        //border-left: 2em solid transparent
+        //border-right: 2em solid transparent
+        .fs-bgImage
+          @include negative-margined-mobile
+          .fs-submitBox
+            @include negative-margined-mobile
+  .fs-highlight-multi
+    border: 4em solid transparent!important
+  .fs-highlight-row,
+  .fs-padding-content,
+  .fs-highlight-followed > div[class*="col-"],
+  .fs-padding-title
+    @include border-mobile
+
+  .fs-mobile-special-position
+    @include border-mobile
+  .fs-bgImage
+    min-height: 350px
+  .fs-bigHighlight
+    display: block
+    div
+      margin: 3em auto !important
+      text-align: center
+  .fs-flexed-followed
+    //padding: 50px
+  .fs-contentGap .fs-gapText
+    column-count: 1
+  .fs-contactBox
+    justify-content: space-around!important
+    overflow: hidden
+  .row
+    &.fs-highlight-this
+      //margin-top: 0.75em
+      //margin-bottom: 0.75em
+      border: 2em solid transparent
+  .fs-teaser-news-left
+    margin-left: 1.5rem
+    margin-right: 1.5rem
+  .fs-content
+    &>.row
+      &>div[class*="col-"]
+        //width: 100%!important
+        //padding-left: 0
+        //padding-right: 0
+  .fs-map
+    &>.row
+      margin-bottom: 1rem!important
+  //.fs-padding-content,
+  .fs-title-no-bgColor
+    padding-left: 2rem!important
+    padding-right: 2rem!important
+
+  #custom-templates,footer
+    &>.container
+      &>.row
+        &>div[class*="col-"]
+          //width: 100%!important
+          //padding-left: 0
+          //padding-right: 0
+          //&>div,
+          //&>h5,
+          //&>iframe
+          //  margin-left: 0
+          //  margin-right: 0
+          //  padding-left: 2rem
+          //  padding-right: 2rem
+  //footer
+  //  .container
+  //    &>.row
+  //      &>div[class*="col-"]
+  //        width: 100%!important
+  //        padding-left: 0
+  //        padding-right: 0
+  //      &>div:not(:last-child)
+  //        margin-bottom: 2rem
+
+
+  .fs-centered
+    margin: auto!important
+    max-width: 100%!important
+    display: block
+    text-align: center
+    .fs-hlbImage
+      margin-right: 0!important
+    *
+      text-align: center
+      display: block
+      margin: 1em auto
+  .fs-rightAligned
+    width: 100%
+    max-width: none
+    padding-left: 1em
+    padding-right: 1em
+    *
+      width: 100%
+      .fs-contact
+        max-width: none!important
+  .fs-contact-img
+    display: flex
+    width: 170px
+    overflow: hidden
+    justify-content: center
+  .fs-rightAligned
+    h5
+      text-align: left!important
+      &:before
+        display: inline-block
+        width: unset!important
+        vertical-align: middle
+        margin-right: 10px
+  .fs-contact-img img
+    min-height: 20em
+    width: auto
+    min-height: unset!important
+  .fs-contact
+    margin-bottom: 2em
+  .fs-contact-col3 img
+    margin-top: 1em
+    margin-bottom: 1em
+  .fs-footer-bottom-row
+    margin-bottom: 0
+  .fs-no-bottom-margin
+    &>div[class*="col-"]
+      margin-bottom: 0!important
+
+@media screen and (min-width: $md) and (max-width: $lg)
+  .fs-contact-col3
+    div.col-lg-4
+      display: flex
+      align-items: flex-start
+      section
+        padding-left: 1.5em
+        margin-bottom: 2em
+    .col-md-12
+      margin-bottom: 1em
+
+
+@media screen and (max-width: $lg)
+  .fs-contact-img img
+    object-fit: cover
+    max-height: 210px
+
+  .fs-break-earlier
+    display: block!important
+
+  .fs-centered
+    max-width: 100%!important
+
+  .fs-this-highlighted
+    div[class*="col-"]
+      margin-bottom: 2rem
+  .fs-this-highlighted > div[class*="col-"]
+    margin-bottom: 2rem!important
+
+  footer
+    .container
+      .container
+        .row
+          margin-right: 0
+          margin-left: 0
+
+  .fs-content
+    &>.row
+      &>div:not(:last-child):not(.fs-highlight-row):not(.fs-bgImage)
+        //margin-bottom: 3rem
+
+  .fs-highlight-multi .fs-flexed-followed
+    margin: 0
+  .fs-highlight-boxes
+    div[class*="col-"]
+      margin-bottom: 2rem
+
+@media screen and (max-width: 600px)
+  .fs-headBanner .fs-blueBanner
+    position: absolute
+    //padding: 2em !important
+  .container .container > .row:not(.fs-highlight-this)
+    margin: 0
+    div[class*="col-"]
+      border: 0!important
+      padding-left: 0!important
+      padding-right: 0!important
+
+  .fs-teaser-news
+    margin-top: 30px
+    //margin-left: $border-left-right
+    //margin-right: 0
+    margin-bottom: 0
+  .fs-highlight-this
+    //padding-right: $border-left-right
+    //padding-left: $border-left-right
+    //padding-left: 1em!important
+    //padding-right: 1em!important
+
+@media screen and (min-width: 599px)
+  div.col
+    padding-left: 0
+    padding-right: 0
+  .fs-noPaddings
+    padding: 0 !important
+
+
+@media screen and (min-width: $lg)
+  .row.fs-this-highlighted,
+  .fs-highlight-followed,
+  .fs-space-between
+    div[class*="lg-6"]
+      width: 49%
+
+  .fs-doubleBox
+    &>.row
+      //max-height: 350px
+  .row.fs-this-highlighted,
+  .fs-highlight-followed,
+  .fs-space-between
+    div[class*="-3"]
+      width: 24%
+    div[class*="lg-4"]
+      width: 31% !important
+
+
+  div[class*="col-"]
+    &>img,
+    .fs-bgImage,
+    .fs-submitBox
+//@include negative-margined-mobile
+
+
+
+@media screen and (min-width: $xl)
+  .fs-highlight-followed,
+  .fs-space-between
+    div[class*="xxl-3"]
+      width: 24%!important

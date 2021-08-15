@@ -1,0 +1,175 @@
+header
+  background-color: $white
+  img
+    height: 65px
+  .fs-search-container
+    input
+      display: none
+      outline: none
+    button
+      height: 15px
+      width: 13px
+      padding-right: 18px
+      border: none
+      outline: none
+      background: url("images/icon-search.svg") right no-repeat
+      background-size: auto
+.fs-language-selector
+  list-style-type: none
+  padding-top: 2px
+  align-items: center
+  li
+    color: $blue
+    a
+      font-family: frutiger-roman
+  li:not(:first-child)
+    padding-left: .3rem
+    display: flex
+    &:before
+      content: "|"
+      padding-right: .3rem
+      font-size: 131%
+  li.fs-active a
+    color: $orange!important
+.fs-hamburger-button
+  button
+    height: 24px
+    width: 24px
+    border: none
+    outline: none
+    background: url("images/icon-hamburger.svg") right no-repeat
+    background-size: contain
+    margin-right: 0.6em
+#fs-search-input,
+#fs-search-input-mobile
+  margin: -10px
+  border: 0
+  border-bottom: 1px solid $light-gray
+  width: 210px
+  font-size: 1em!important
+#fs-search-input-mobile
+  margin: 10px!important
+
+#fs-mainNav
+  list-style-type: none
+  padding-left: 0.1em!important
+  a
+    text-indent: -1.08em
+    padding-left: 0
+  li
+    padding-left: 0!important
+    margin-right: 6%
+  &>li
+    padding: 0.5em 0
+  .fs-linklist
+    margin-left: 1.1em
+    margin-top: 0.5em
+  div[class*="col-"]
+    padding-left: 0.8em
+    padding-right: 0.8em
+.fs-name
+  height: 28rem
+.fs-name-logo
+  background: url(../images/header-picture.jpeg) no-repeat
+  width: 100% !important
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  /* height: 35rem; */
+  top: 0
+  height: 100%
+  background-size: cover
+  background-position: top
+
+.fs-mainNavPoint
+  position: relative
+  text-transform: uppercase
+  color: $blue!important
+  padding: 0.5rem 0
+  text-indent: -1em!important
+  &:hover
+    color: $blue!important
+  &:hover:after
+    content: ''
+    height: 3px
+    width: 100%
+    margin-top: 0.3em
+    left: 0
+    display: block
+    position: absolute
+    z-index: 10
+    background-color: $blue
+
+.fs-mainGroupPoint
+  font-weight: bold
+
+.fs-linkTitle
+  font-family: frutiger-roman!important
+  color: $blue!important
+  //@include text14
+  margin-bottom: 13px
+.fs-language-selector a
+  font-size: 1.2rem!important
+  color: $blue
+.fs-flyer-main
+  //border-top: 1px solid $light-gray
+
+nav.fs-header-nav
+  width: 100%
+  position: sticky
+  position: -webkit-sticky
+  top: 0
+  z-index: 999
+  background-color: $white
+  div > ul
+    li
+      &:hover
+        .fs-hidden-nav
+          display: block //TODO flex
+      .fs-hidden-nav
+        display: none
+        position: absolute
+        //margin-top: .5rem
+        left: 0
+        background-color: $white-transparent
+        padding-left: 0.15em!important
+        .fs-hidden-nav-column
+          margin: 3rem 0px
+          span
+            color: $blue
+
+nav.fs-header-nav div > ul li ul li > a,
+footer li a
+  @include text14
+  color: inherit
+  text-transform: inherit
+footer li a
+
+header, footer
+  a
+    display: block
+    color: $gray
+    position: relative
+    &:hover
+      color: $orange!important
+
+@media screen and (min-width: 990px)
+  .fs-searchAndLang
+    padding-top: 1.2em
+
+@media screen and (min-width: 1024px)
+  header
+    height: 10em
+    img
+      height: 89px !important
+    >.container
+      padding-top: 2em!important
+  .fs-searchAndLang
+    padding-top: 2.2em!important
+
+
+@media screen and (max-width: 600px)
+  .fs-flyer-main
+    padding-left: 0!important
+    padding-right: 0!important
